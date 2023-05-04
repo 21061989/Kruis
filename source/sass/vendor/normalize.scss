@@ -80,6 +80,10 @@ a {
   background-color: transparent;
 }
 
+a:hover,
+button:hover {
+  outline: 2px solid #6aadcc;;
+}
 /**
 * 1. Remove the bottom border in Chrome 57-
 * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.

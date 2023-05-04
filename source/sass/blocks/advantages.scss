@@ -1,0 +1,73 @@
+.advantages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 7.54vw 120px;
+  background-image: url("../img/bg-advantages.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #a8dfec;
+
+  @include vp-1023 {
+    padding: 90px 5.86vw 100px;
+  }
+}
+
+.advantages h2 {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc((100vw - 768px)/(1366 - 768) * (28 - 26) + 26px);
+  line-height: calc((100vw - 768px)/(1366 - 768) * (42 - 39) + 39px);
+  color: #011c40;
+  margin: 0 0 49px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+}
+
+.advantages__item {
+  list-style: none;
+  background-color: #f9fbfd;
+  padding: 30px 30px 45px;
+
+  @include vp-1023 {
+    padding: 25px 10px 18px 20px;
+  }
+}
+
+.advantages__item svg {
+  @include vp-1023 {
+    height: 26px;
+    padding-right: 5px;
+  }
+}
+
+.advantages__item h3 {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011c40;
+  margin: 12px 0 8px;
+}
+
+.advantages__item p {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #011c40;
+  margin: 0;
+}

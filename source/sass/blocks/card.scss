@@ -1,0 +1,60 @@
+.card {
+  display: none;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.card a {
+  position: absolute;
+  bottom: 35px;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #011c40;
+  border: none;
+  background-color: #f9fbfd;
+  padding: 10px;
+  width: calc(100% - 50px);
+
+  @include vp-1023 {
+    width: calc(100% - 70px);
+  }
+}
+
+.card__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__item h4 {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.card__item p {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #d8d8d9;
+  margin: 0;
+}

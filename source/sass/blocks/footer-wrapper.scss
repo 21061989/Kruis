@@ -1,0 +1,33 @@
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 7.54vw 42px;
+  background: #011c40;
+
+  @include vp-1023 {
+    padding: 46px 5.86vw;
+  }
+}
+
+.footer-wrapper .menu {
+  gap: 40px;
+
+  @include vp-1023 {
+    gap: 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.footer-wrapper .menu__item a {
+  @include vp-1023 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.footer-wrapper .menu__logo {
+  padding-top: 5px;
+}
