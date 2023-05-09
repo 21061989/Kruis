@@ -17,8 +17,8 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="header-wrapper header-example">
-        <section class="menu">
+      <div class="header-wrapper">
+        <section class="menu" id="menu">
           <h2 class="visually-hidden">Навигация</h2>
           <div class="menu__logo">
             <a href="#">
@@ -26,9 +26,17 @@
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </a>
+            <button class="menu__burger" type="button" id="burger">
+              <svg class="menu__open" width="24" height="12">
+                <use xlink:href="img/sprite.svg#burger"></use>
+              </svg>
+              <svg class="menu__close" width="13" height="13">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
           </div>
-          <div class="menu__nav" data-header="data-header">
-            <ul class="menu__list">
+          <div class="menu__nav">
+            <ul class="menu__list" id="menu-item">
               <li class="menu__item">
                 <a href="#advantages">Преимущества</a>
               </li>
@@ -42,21 +50,11 @@
                 <a href="#contacts">Контакты</a>
               </li>
             </ul>
-            <div class="menu__burger" data-burger="data-burger">
-              <svg width="24" height="12">
-                <use xlink:href="img/sprite.svg#burger"></use>
-              </svg>
-            </div>
-            <div class="menu__close" data-close-menu="data-close-menu">
-              <svg width="13" height="13">
-                <use xlink:href="img/sprite.svg#close"></use>
-              </svg>
-            </div>
-          </div>
         </section>
         <section class="header-desc">
-          <h1>Круизы в Антарктику</h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир
+            айсбергов и&nbsp;пингвинов</p>
         </section>
       </div>
     </header>
@@ -64,7 +62,8 @@
       <div class="main-wrapper">
         <section class="description">
           <div class="description__wrapper">
-            <h2>Путешествие на край Земли</h2>
+            <h2>Путешествие
+              на&nbsp;край Земли</h2>
             <p>Это волшебное путешествие поможет вам познакомиться поближе
               с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас
               на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
@@ -113,6 +112,8 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-astoria-mobil.webp 1x, img/card-astoria-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-astoria-tablet.webp 1x, img/card-astoria-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-astoria.webp 1x, img/card-astoria@2x.webp 2x">
@@ -143,6 +144,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-atlantis-mobil.webp 1x, img/card-atlantis-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-atlantis-tablet.webp 1x, img/card-atlantis-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-atlantis.webp 1x, img/card-atlantis@2x.webp 2x">
@@ -173,6 +176,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-atlantis-mobil.webp 1x, img/card-atlantis-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-atlantis-tablet.webp 1x, img/card-atlantis-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-atlantis.webp 1x, img/card-atlantis@2x.webp 2x">
@@ -203,6 +208,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-odissey-mobil.webp 1x, img/card-odissey-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-odissey-tablet.webp 1x, img/card-odissey-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-odissey.webp 1x, img/card-odissey@2x.webp 2x">
@@ -233,6 +240,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-olimpia-mobil.webp 1x, img/card-olimpia-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-olimpia-tablet.webp 1x, img/card-olimpia-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-olimpia.webp 1x, img/card-olimpia@2x.webp 2x">
@@ -263,6 +272,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-avrora-mobil.webp 1x, img/card-avrora-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-avrora-tablet.webp 1x, img/card-avrora-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-avrora.webp 1x, img/card-avrora@2x.webp 2x">
@@ -293,6 +304,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-leonor-mobil.webp 1x, img/card-leonor-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-leonor-tablet.webp 1x, img/card-leonor-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-leonor.webp 1x, img/card-leonor@2x.webp 2x">
@@ -323,6 +336,8 @@
             </li>
             <li class="catalog__item">
               <picture>
+                <source srcset="img/card-minion-1-mobil.webp 1x, img/card-minion-1-mobil@2x.webp 2x"
+                  media="(max-width: 767px)">
                 <source srcset="img/card-minion-1-tablet.webp 1x, img/card-minion-1-tablet@2x.webp 2x"
                   media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/card-minion-1.webp 1x, img/card-minion-1@2x.webp 2x">
@@ -361,7 +376,9 @@
             </p>
           </div>
           <form action="#">
-            <fieldset>Оставьте заявку и мы свяжемся с вами в ближайшее время</fieldset>
+            <fieldset>Оставьте заявку
+              и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+              в&nbsp;ближайшее время</fieldset>
             <div class="main-form__wrapper-inputs">
               <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
                 <input type="text" placeholder="Имя" aria-label="Имя">
@@ -378,7 +395,8 @@
                 data-on-input-validate="data-on-input-validate" data-required="data-required">
                 <label>
                   <input type="checkbox" checked>
-                  <span>Я согласен на обработку моих персональных данных</span>
+                  <span>Я&nbsp;согласен на&nbsp;обработку
+                    моих персональных данных</span>
                 </label>
               </div>
               <button type="submit">Оставить заявку</button>

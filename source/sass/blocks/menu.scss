@@ -5,23 +5,49 @@
   align-items: center;
 }
 
-.menu__burger {
-  display: none;
-
+.menu__logo {
   @include vp-767 {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  & svg {
+    color: #f9fbfd;
+
+    @include vp-1023 {
+      width: 38px;
+      height: 20px;
+    }
+
+    @include vp-767 {
+      width: 42px;
+      height: 22px;
+    }
+  }
+
+  & button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    & .menu__open {
+      display: none;
+
+      @include vp-767 {
+        display: block;
+        width: 24px;
+        height: 14px;
+      }
+    }
   }
 }
 
 .menu__close {
   display: none;
-}
-
-.menu__logo svg {
-  @include vp-1023 {
-    width: 38px;
-    height: 20px;
-  }
+  width: 13px;
+  height: 13px;
 }
 
 .menu__nav {
@@ -41,7 +67,9 @@
 
 
   @include vp-767 {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
   }
 }
 
@@ -58,4 +86,13 @@
   line-height: calc((100vw - 768px)/(1366 - 768) * (20 - 17) + 17px);
   color: #f9fbfd;
   user-select: none;
+}
+
+.menu__burger {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    cursor: pointer;
+  }
 }

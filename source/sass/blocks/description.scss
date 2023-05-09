@@ -10,6 +10,13 @@
     align-items: start;
     gap: 4vw;
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding: 54px 4.7vw 83px;
+    gap: 11vw;
+  }
 }
 
 .description__img-wrapper {
@@ -24,6 +31,10 @@
 
   @include vp-1023 {
     max-width: 324px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
   }
 }
 

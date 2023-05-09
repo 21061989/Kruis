@@ -7,6 +7,10 @@
   @include vp-1023 {
     padding: 90px 7.82vw 100px;
   }
+
+  @include vp-767 {
+    padding: 56px 7.82vw 66px;
+  }
 }
 
 .catalog h2 {
@@ -18,6 +22,12 @@
   color: #011c40;
   margin: 0;
   margin-bottom: 50px;
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .catalog__list {
@@ -30,6 +40,10 @@
 
   @include vp-1023 {
     gap: 4vw;
+  }
+
+  @include vp-767 {
+    gap: 30px;
   }
 }
 
@@ -44,6 +58,10 @@
 
   @include vp-1023 {
     aspect-ratio: 3.09/3.86;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 2.7/3.86;
   }
 
   & img {
@@ -70,6 +88,10 @@
     @include vp-1023 {
       padding: 28px 35px 90px;
     }
+
+    @include vp-767 {
+      padding: 28px 25px 90px;
+    }
   }
 
   &:hover .card {
@@ -95,6 +117,11 @@
     @include vp-1023 {
       bottom: 28px;
       left: 35px;
+    }
+
+    @include vp-767 {
+      bottom: 17px;
+      left: 25px;
     }
   }
 }

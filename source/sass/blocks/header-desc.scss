@@ -7,6 +7,13 @@
   @include vp-1023 {
     padding: 210px 0 255px;
   }
+
+  @include vp-767 {
+    padding: 0;
+    position: absolute;
+    left: 15px;
+    top: 175px;
+  }
 }
 
 .header-desc h1 {
@@ -19,6 +26,11 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   padding: 0;
+
+  @include vp-1023 {
+    font-size: calc((100vw - 320px)/(768 - 320) * (50 - 36) + 36px);
+    line-height: calc((100vw - 320px)/(768 - 320) * (61 - 45) + 45px);
+  }
 }
 
 .header-desc p {
@@ -31,4 +43,10 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22px;
+    padding-right: 60px;
+  }
 }

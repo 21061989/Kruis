@@ -10,6 +10,68 @@
   }
 
   @include vp-767 {
-    padding: 20px 15px;
+    padding: 23px 15px;
+    position: relative;
+    width: 100%;
+    min-height: 507px;
+
+    & .menu__nav {
+      display: none;
+    }
+
+    & .menu.is-open {
+      @include vp-767 {
+        position: fixed;
+        width: 89%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 20px 15px;
+        justify-content: start;
+        background: #f9fbfd;
+        z-index: 2;
+        flex-wrap: nowrap;
+        align-items: start;
+
+        &::before {
+          content: "";
+          width: 13%;
+          height: 100%;
+          position: absolute;
+          left: -13%;
+          top: 0;
+          background: rgba(0, 43, 102, 0.5);
+        }
+
+        & .menu__nav {
+          display: block;
+          overflow: auto;
+          padding: 38px 11px;
+        }
+      }
+
+      & .menu__item a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #011c40;
+      }
+
+      & .menu__logo svg {
+        color: #011c40;
+      }
+
+      & .menu__open {
+        display: none;
+      }
+
+      & .menu__close {
+        display: block;
+        width: 13px;
+        height: 13px;
+      }
+    }
   }
 }
+
