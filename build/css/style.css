@@ -68,7 +68,8 @@ a {
 }
 
 a:hover,
-button:hover {
+button:hover,
+input:hover {
   outline: 2px solid #6aadcc;
 }
 
@@ -1258,6 +1259,11 @@ button,
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .header-wrapper {
+    background-image: url("../img/bg-header@2x.webp");
+  }
+}
 @media (max-width: 1023px) {
   .header-wrapper {
     padding: 29px 5.86vw;
@@ -1650,6 +1656,11 @@ button,
   background-repeat: no-repeat;
   background-color: #a8dfec;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .advantages {
+    background-image: url("../img/bg-advantages@2x.webp");
+  }
+}
 @media (max-width: 1023px) {
   .advantages {
     padding: 90px 5.86vw 100px;
@@ -1835,8 +1846,9 @@ button,
 .catalog__item img {
   width: 100%;
   height: auto;
+  position: absolute;
 }
-.catalog__item:hover {
+.catalog__item:focus-within, .catalog__item:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1850,24 +1862,25 @@ button,
   padding: 28px 25px 90px;
   overflow: auto;
 }
-.catalog__item:hover img {
+.catalog__item:focus-within img, .catalog__item:hover img {
   display: none;
 }
-.catalog__item:hover h3 {
+.catalog__item:focus-within h3, .catalog__item:hover h3 {
   position: initial;
   margin-bottom: 15px;
 }
 @media (max-width: 1023px) {
-  .catalog__item:hover {
+  .catalog__item:focus-within, .catalog__item:hover {
     padding: 28px 35px 90px;
   }
 }
 @media (max-width: 767px) {
-  .catalog__item:hover {
+  .catalog__item:focus-within, .catalog__item:hover {
     padding: 28px 25px 90px;
   }
 }
-.catalog__item:hover .card {
+.catalog__item:focus-within .card, .catalog__item:hover .card {
+  opacity: 1;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1905,7 +1918,7 @@ button,
 }
 
 .card {
-  display: none;
+  opacity: 0;
 }
 
 .card__list {
@@ -2003,6 +2016,11 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 11.93vw;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .main-form {
+    background-image: url("../img/bg-form@2x.webp");
+  }
 }
 @media (max-width: 1023px) {
   .main-form {

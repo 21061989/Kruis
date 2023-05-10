@@ -1,6 +1,10 @@
 .header-wrapper {
   padding: 35px 7.54vw;
   background-image: url("../img/bg-header.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-header@2x.webp");
+  }
   background-color: #00ccff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,4 +78,3 @@
     }
   }
 }
-

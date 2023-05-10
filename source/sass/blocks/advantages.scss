@@ -4,6 +4,10 @@
   flex-direction: column;
   padding: 110px 7.54vw 120px;
   background-image: url("../img/bg-advantages.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-advantages@2x.webp");
+  }
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #a8dfec;

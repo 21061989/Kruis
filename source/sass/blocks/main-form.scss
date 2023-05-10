@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
   background-image: url("../img/bg-form.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-form@2x.webp");
+  }
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 11.93vw;
