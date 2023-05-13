@@ -38,8 +38,7 @@
         flex-wrap: nowrap;
         align-items: start;
 
-        &::before {
-          content: "";
+        & .menu__close-mobil {
           width: 13%;
           height: 100%;
           position: absolute;
@@ -79,3 +78,4 @@
     }
   }
 }
+

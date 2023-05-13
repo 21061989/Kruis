@@ -98,3 +98,11 @@
     cursor: pointer;
   }
 }
+
+.menu__close-mobil {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}

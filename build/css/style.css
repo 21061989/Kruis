@@ -481,8 +481,8 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .wrapper {
@@ -1307,8 +1307,7 @@ button,
         -ms-flex-align: start;
             align-items: start;
   }
-  .header-wrapper .menu.is-open::before {
-    content: "";
+  .header-wrapper .menu.is-open .menu__close-mobil {
     width: 13%;
     height: 100%;
     position: absolute;
@@ -1474,6 +1473,15 @@ button,
   .menu__burger {
     display: block;
     cursor: pointer;
+  }
+}
+
+.menu__close-mobil {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu__close-mobil {
+    display: block;
   }
 }
 
@@ -2353,6 +2361,7 @@ button,
   padding: 12px;
   cursor: pointer;
   margin-top: 10px;
+  background: #f9fbfd;
 }
 @media (max-width: 767px) {
   .main-form button {
