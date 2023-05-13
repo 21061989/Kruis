@@ -1,7 +1,4 @@
 .advantages {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 110px 7.54vw 120px;
   background-image: url("../img/bg-advantages.webp");
 
@@ -19,6 +16,14 @@
   @include vp-767 {
     padding: 57px 4.7vw 65px;
   }
+}
+
+.advantages__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .advantages h2 {

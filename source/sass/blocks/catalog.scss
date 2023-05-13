@@ -34,16 +34,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 2.2vw;
-  margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+
 
   @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
     gap: 4vw;
   }
 
   @include vp-767 {
     gap: 30px;
+    grid-template-columns: auto;
   }
 }
 

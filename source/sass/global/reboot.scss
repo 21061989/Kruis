@@ -126,5 +126,6 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  -webkit-appearance: none;
   appearance: none;
 }

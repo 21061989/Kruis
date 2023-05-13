@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 25px;
 
 
   @include vp-1023 {

@@ -1,8 +1,4 @@
 .footer-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   padding: 46px 7.54vw 42px;
   background: #011c40;
 
@@ -12,6 +8,18 @@
 
   @include vp-767 {
     padding: 36px 4.86vw;
+  }
+}
+
+.footer-wrapper__menu-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @include vp-767 {
     flex-direction: column;
     align-items: start;
     gap: 22px;
@@ -20,6 +28,7 @@
 
 .footer-wrapper .menu {
   gap: 40px;
+  margin: 0;
 
   @include vp-1023 {
     gap: 25px;
