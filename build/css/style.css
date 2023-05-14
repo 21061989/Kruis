@@ -67,7 +67,10 @@ a {
   background-color: transparent;
 }
 
-a:hover,
+a:hover {
+  color: #6aadcc;
+}
+
 button:hover,
 input:hover {
   outline: 2px solid #6aadcc;
@@ -1373,13 +1376,16 @@ button,
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 .menu__logo svg {
   color: #f9fbfd;
+}
+.menu__logo svg:hover {
+  color: #6aadcc;
 }
 @media (max-width: 1023px) {
   .menu__logo svg {
@@ -1464,6 +1470,9 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.menu__item a:hover {
+  color: #6aadcc;
 }
 
 .menu__burger {
@@ -1990,6 +1999,9 @@ button,
   padding: 10px;
   width: calc(100% - 50px);
 }
+.card a:hover {
+  color: #6aadcc;
+}
 @media (max-width: 1023px) {
   .card a {
     width: calc(100% - 70px);
@@ -2076,6 +2088,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2363,6 +2376,9 @@ button,
   margin-top: 10px;
   background: #f9fbfd;
 }
+.main-form button:hover {
+  color: #6aadcc;
+}
 @media (max-width: 767px) {
   .main-form button {
     margin-top: 7px;
@@ -2536,6 +2552,9 @@ button,
   color: #011c40;
   cursor: pointer;
 }
+.main-nav__item a:hover {
+  color: #6aadcc;
+}
 
 .footer-wrapper {
   padding: 46px 7.54vw 42px;
@@ -2591,6 +2610,11 @@ button,
     line-height: 17px;
   }
 }
+@media (max-width: 767px) {
+  .footer-wrapper .menu {
+    gap: 20px;
+  }
+}
 
 @media (max-width: 1023px) {
   .footer-wrapper .menu__item a {
@@ -2605,7 +2629,7 @@ button,
 
 @media (max-width: 767px) {
   .footer-wrapper .menu__list {
-    gap: 14px;
+    gap: 15px;
   }
 }
 
@@ -2629,6 +2653,7 @@ button,
 @media (max-width: 1023px) {
   .social__list {
     min-width: 87px;
+    gap: 17px;
   }
 }
 
@@ -2645,6 +2670,10 @@ button,
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  color: #f9fbfd;
+}
+.social__item a:hover {
+  color: #6aadcc;
 }
 @media (max-width: 1023px) {
   .social__item svg {

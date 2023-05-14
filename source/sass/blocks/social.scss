@@ -11,6 +11,7 @@
 
   @include vp-1023 {
     min-width: 87px;
+    gap: 17px;
   }
 }
 
@@ -23,6 +24,11 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: #f9fbfd;
+
+    &:hover {
+      color: #6aadcc;
+    }
   }
 
   @include vp-1023 {

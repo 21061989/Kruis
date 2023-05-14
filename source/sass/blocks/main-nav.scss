@@ -119,4 +119,8 @@
   align-items: center;
   color: #011c40;
   cursor: pointer;
+
+  &:hover {
+    color: #6aadcc;
+  }
 }

@@ -80,10 +80,12 @@ a {
   background-color: transparent;
 }
 
-a:hover,
+a:hover {
+  color: #6aadcc;
+}
 button:hover,
 input:hover {
-  outline: 2px solid #6aadcc;;
+  outline: 2px solid #6aadcc;
 }
 /**
 * 1. Remove the bottom border in Chrome 57-

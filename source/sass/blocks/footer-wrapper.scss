@@ -35,6 +35,10 @@
     font-size: 14px;
     line-height: 17px;
   }
+
+  @include vp-767 {
+    gap: 20px;
+  }
 }
 
 .footer-wrapper .menu__item a {
@@ -50,6 +54,6 @@
 
 .footer-wrapper .menu__list {
   @include vp-767 {
-    gap: 14px;
+    gap: 15px;
   }
 }

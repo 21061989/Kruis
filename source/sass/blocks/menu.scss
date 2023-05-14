@@ -12,11 +12,15 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
+    align-items: start;
   }
 
   & svg {
     color: #f9fbfd;
+
+    &:hover {
+      color: #6aadcc;
+    }
 
     @include vp-1023 {
       width: 38px;
@@ -88,6 +92,10 @@
   line-height: calc((100vw - 768px)/(1366 - 768) * (20 - 17) + 17px);
   color: #f9fbfd;
   user-select: none;
+
+  &:hover {
+    color: #6aadcc;
+  }
 }
 
 .menu__burger {
